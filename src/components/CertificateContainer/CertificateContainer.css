@@ -1,0 +1,66 @@
+.certificate-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 2em; 
+    
+}
+
+.certificate {
+    flex: 0 1 calc(33.33% - 20px); 
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.certificate:hover {
+    transform: translateY(-7px);
+}
+
+.certificate-img-container {
+    box-shadow: var(--shadow);
+}
+
+.certificate__img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .certificate {
+        padding: 1em; /* Add padding for mobile view */
+    }
+
+    .certificate__img {
+        width: 100%; /* Make image take full width on mobile */
+        max-width: 300px; /* Set a max-width to prevent the image from becoming too large */
+        height: auto;
+    }
+
+    .certificate__desc {
+        font-size: 1rem; /* Adjust the text size for readability on mobile */
+    }
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .certificate {
+        padding: 1em; /* Add padding for mobile view */
+    }
+
+    .certificate__img {
+        width: 100%; /* Make image take full width on mobile */
+        max-width: 300px; /* Set a max-width to prevent the image from becoming too large */
+        height: auto;
+    }
+
+    .certificate__desc {
+        font-size: 1rem; /* Adjust the text size for readability on mobile */
+    }
+}
